@@ -1,0 +1,26 @@
+{
+  "name": "InspectorBook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cara-burton/InpectorBook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+    "url": "https://github.com/cara-burton/InpectorBook/Issues"
+  },
+  "homepage": "https://github.com/cara-burton/InspectorBook#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.1"
+  }
+}

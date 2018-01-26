@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+
 }
 h1, h2, a{
   font-family: sans-serif;
@@ -15,3 +16,187 @@ a:hover{
     text-decoration: underline;
     color: #05B2DC;
   }
+
+  *{
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #ECCFC3;
+  }
+
+  /*/ above is the structure of the application/*/
+
+  h2{
+    font-size: 115%;
+  }
+
+  /*/ above is font, font size and colour /*/
+
+  li :hover{
+      text-decoration: underline;
+      color: purple;
+
+    .app-container{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      /* Do NOT allow the app to scroll off the screen */
+      overflow: hidden;
+    }
+
+    /* HEADER STYLES */
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      /* Give the header a drop shadow */
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+      /*Puts a header on top*/
+      z-index: 999;
+    }
+    header a {
+      color: red;
+      text-decoration: none;
+    }
+    header a h1{
+      font-size: 1.2em;
+    }
+    header img{
+      width: 40px;
+      height: 40px;
+      /*  Rounded corners  */
+      border-radius: 100%;
+    /*   margin: 10px */
+    }
+
+    main{
+      /* Take up all free space on the screen between header and footer */
+      flex: 1 1 auto;
+      overflow-y: scroll;
+      padding: 20px
+    }
+
+    main .message{
+      margin: 10px 0px;
+      padding: 10px;
+      background-color: white;
+    }
+
+    main img{
+      margin-bottom: 20px;
+    }
+
+    main h2{
+      margin-bottom: 20px
+    }
+
+    main ul li {
+      margin-bottom: 20px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      background-color: red;
+      padding: 20px;
+    }
+
+    main h5{
+      margin: 20px 0px 10px 0px;
+      color: white
+    }
+
+    main p{
+      margin-top: 10px
+    }
+
+    main a{
+      color: red;
+      text-decoration: none
+    }
+
+
+    main form input, main form textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    main form button {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    /* FOOTER STYLES */
+    footer{
+      /* Give the footer a shadow too */
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.2)
+    }
+
+    footer nav ul{
+      display: flex;
+      /*  Put everything on one line  */
+      flex-direction: row;
+      /* Equally space everything  */
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    footer nav ul li{
+      /* Stop everything from hitting the edges of the footer   */
+      padding: 10px;
+    }
+
+    footer nav ul li a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: black
+    }
+
+    footer nav ul li a.active{
+      color: grey;
+      pointer-events: none
+    }
+
+    footer nav ul li a i {
+      /* Add some spacing between menu icons and text */
+      margin-bottom: 5px
+    }
+
+  nav ul {
+    display: flex;
+    justify-content: row;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0px 8px 8px  #983628;
+  }
+  /*/ nav= navigation of page and that particular part /*/
+  ul {
+      list-style-type: none;
+  }
+
+    img{
+      width: 30%;
+      height: auto;
+      display: block;
+      margin: 25px auto;
+      border-radius: 300px;
+      box-shadow: 0px 8px 8px  #983628;
+
+    }
+
+  li{
+    font-size: 100%;
+    color: #983628;
+    font-family: cursive;
+  }
+
+  f1{
+   justify-content: flex-end;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*/ footer details and navigation above/*/
